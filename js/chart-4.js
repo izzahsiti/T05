@@ -15,7 +15,7 @@ async function renderChart() {
   const rows = await loadData(config.fileName, config.columnHeadings);
   const [yearColumn, priceColumn] = config.columnHeadings;
   // Some years have no average, so omit them instead of drawing invalid values.
-  const plottedRows = rows.filter((row) => Number.isFinite(Number(row[priceColumn])));
+  const plottedRows = rows.filter((row) => row[priceColumn] !== "" && Number.isFinite(Number(row[priceColumn])));
   const data = plottedRows.map((row) => ({ year: Number(row[yearColumn]), price: Number(row[priceColumn]) }));
   const container = d3.select("#chart-4");
   const bounds = container.node().getBoundingClientRect();
