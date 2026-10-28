@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f0e8" />
+    <title>Fieldnotes | Data overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="js/chart-1.js"></script>
+    <script type="module" src="js/chart-2.js"></script>
+    <script type="module" src="js/chart-3.js"></script>
+    <script type="module" src="js/chart-4.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="wordmark" href="./" aria-label="Fieldnotes home">
+          <span class="wordmark-mark" aria-hidden="true">F</span>
+          <span>FIELDNOTES</span>
+        </a>
+        <div class="topbar-meta"><span class="status-dot"></span> DATA WORKSPACE <span class="meta-divider">/</span> OVERVIEW</div>
+        <button class="date-button" type="button" aria-label="Date range: all data">ALL DATA <span aria-hidden="true">⌄</span></button>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <div class="intro-copy">
+            <p class="eyebrow">OBSERVATIONS &amp; TRENDS <span>—</span> 01</p>
+            <h1 id="page-title">Energy use<br />and spot prices.</h1>
+            <p class="intro-note">Television energy consumption and Australian electricity prices, 1998–2024.</p>
+          </div>
+          <div class="intro-stamp" aria-hidden="true">
+            <span>FIELD</span><span class="stamp-line"></span><span>STUDY</span>
+            <span class="stamp-number">№ 01</span>
+          </div>
+        </section>
+
+        <section class="chart-grid" aria-label="Charts">
+          <article class="chart-panel chart-panel-wide" aria-labelledby="chart-1-title">
+            <header class="panel-heading">
+              <div><p class="panel-index">01 / SCATTER PLOT</p><h2 id="chart-1-title">Energy use vs. star rating</h2></div>
+              <span class="chart-kind">SCATTER</span>
+            </header>
+            <div class="plot-area" id="chart-1" role="img" aria-label="Scatter chart of television energy consumption against star rating"></div>
+            <footer class="panel-footer"><span>ALL TV RECORDS</span><span class="footer-rule"></span><span class="footer-note">ENERGY CONSUMPTION / STAR RATING</span></footer>
+          </article>
+
+          <article class="chart-panel" aria-labelledby="chart-2-title">
+            <header class="panel-heading">
+              <div><p class="panel-index">02 / DONUT-CHART</p><h2 id="chart-2-title">Energy by screen technology</h2></div>
+              <span class="chart-kind">DOUGHNUT</span>
+            </header>
+            <div class="plot-area" id="chart-2" role="img" aria-label="Doughnut chart of average energy consumption by screen technology across all televisions"></div>
+            <footer class="panel-footer"><span>ALL SCREEN SIZES</span><span class="footer-rule"></span><span class="footer-note">MEAN KWH PER YEAR</span></footer>
+          </article>
+
+          <article class="chart-panel" aria-labelledby="chart-3-title">
+            <header class="panel-heading">
+              <div><p class="panel-index">03 / BAR CHART</p><h2 id="chart-3-title">55-inch TV energy use</h2></div>
+              <span class="chart-kind">BAR</span>
+            </header>
+            <div class="plot-area" id="chart-3" role="img" aria-label="Bar chart comparing average energy consumption by screen technology for 55-inch televisions"></div>
+            <footer class="panel-footer"><span>55-INCH TELEVISIONS</span><span class="footer-rule"></span><span class="footer-note">MEAN KWH PER YEAR</span></footer>
+          </article>
+
+          <article class="chart-panel chart-panel-wide" aria-labelledby="chart-4-title">
+            <header class="panel-heading">
+              <div><p class="panel-index">04 / LINE CHART</p><h2 id="chart-4-title">Average spot power prices, 1998–2024</h2></div>
+              <span class="chart-kind">LINE</span>
+            </header>
+            <div class="plot-area" id="chart-4" role="img" aria-label="Line chart of average Australian spot power prices from 1998 to 2024"></div>
+            <footer class="panel-footer"><span>AUSTRALIA</span><span class="footer-rule"></span><span class="footer-note">AVERAGE $ / MWH</span></footer>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer"><span>FIELDNOTES / DATA OVERVIEW</span><span>BUILT FOR THE DETAILS</span></footer>
+    </div>
+  </body>
+</html>
